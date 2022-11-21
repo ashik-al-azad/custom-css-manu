@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-top-area a {
+    color: #5b4060;
+    padding: 15px;
+    display: inline-block;
+}
+
+.off-canvar-menu {
+    background-color: #333;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    z-index: 99;
+    padding: 25px;
+    margin-left: -350px;
+    transition: .2s;
+}
+
+.off-canvar-menu.active {
+    margin-left: 0;
+}
+
+.off-canvar-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 50px;
+}
+
+.off-canvar-menu li {    
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.off-canvar-menu li.active {
+    background-color: #f00;
+}
+
+.off-canvar-menu li a {
+    color: #fff;
+}
+
+.menu-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.off-canvar-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: .2s;
+}
+
+.off-canvar-overlay.active {
+    z-index: 98;
+    opacity: .6;
+}
+
+.header-top-area a.menu-trigger {
+    display: block;
+}
+
+.header-top-area a.menu-trigger span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #c55288;
+    margin-bottom: 10px;
+}
+
+.header-top-area a.menu-trigger span:nth-child(2) {
+    width: 15px;
+}
+
+.header-top-area a.menu-trigger span:nth-child(3) {
+    width: 25px;
+}
